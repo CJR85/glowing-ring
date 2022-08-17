@@ -27,6 +27,21 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  animation: animate 2s linear infinite;
+}
+
+.container .loader:nth-child(2),
+.container .loader:nth-child(4) {
+  animation-delay: 1s;
+  filter: hue-rotate(290deg);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .container .loader:nth-child(1)::before,
